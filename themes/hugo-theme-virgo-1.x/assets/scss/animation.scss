@@ -1,52 +1,52 @@
 body.active-animate {
-    animation: fadeIn 2s;
+    animation: fadeIn 1.5s;
 
     p {
-        animation: slideInUp 0.6s;
+        animation: slideInUp 0.3s;
     }
 
     .container-home {
         .menu .item {
-            animation: slideInDown 1s;
+            animation: slideInDown 0.7s;
         }
 
         .content .desc {
-            animation: slideInUp 1s;
+            animation: slideInUp 0.7s;
         }
     }
 
     .container-nav .content-nav .nav ul {
-        animation: slideInUp 1s;
+        animation: slideInUp 0.7s;
     }
 
     .container-search {
         #search {
-            animation: slideInLeft 1s;
+            animation: slideInLeft 0.7s;
         }
 
         .list .item {
-            animation: slideInUp 1s;
+            animation: slideInUp 0.7s;
         }
     }
 
     .container-list .list {
         .recentf, .item {
-            animation: slideInUp 1s;
+            animation: slideInUp 0.7s;
         }
     }
 
     .container-archive {
         .recentf .rec-post .rec-post-item {
-            animation: slideInLeft 1s;
+            animation: slideInLeft 0.7s;
         }
 
         .categories,
         .tags {
             .arc-item {
-                animation: slideInUp 1s;
+                animation: slideInUp 0.7s;
 
                 .arc-post .arc-post-item {
-                    animation: slideInRight 1s;
+                    animation: slideInRight 0.7s;
                 }
             }
         }
