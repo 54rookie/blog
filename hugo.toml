@@ -1,6 +1,6 @@
 baseURL = 'https://walkssi.com/'
 languageCode = 'zh-cn'
-title = 'Walkssi'
+title = '54rookie'
 
 # 启用主题
 theme = 'hugo-theme-virgo-1.x'
@@ -11,7 +11,7 @@ paginate = 11
 enableGitInfo = true
 
 [params]
-    author = 'Jack'
+    author = '54rookie'
     slogan = 'Life should be interesting.' # 'Life is just a joker.'
 
     # 页面语言，默认中文
@@ -19,7 +19,7 @@ enableGitInfo = true
     # 英文首页标题，默认 'Virgo'
     homeTitleEn = 'Walkssi'
     # 中文首页标题，默认 ‘一晌贪欢’
-    homeTitleZh = '遛达西'
+    homeTitleZh = '54rookie'
 
     # 激活暗色模式，
     # 由于静态页面的限制，我们使用浏览器本地存储来记忆该状态，
@@ -104,7 +104,8 @@ enableGitInfo = true
         # 你还可以通过 `width` 调整引入图片的显示大小，
         # 如果，将 `width` 设置为 '' 或 0 ，
         # 将默认使用图片自身分辨率尺寸
-        src = 'cat.svg'
+        # src = 'cat.svg'
+        src = 'wukong.jpg'
         width = 0
         # words = "Stay hungry, Stay foolish. <br>Your time is limited, so don't waste it living someone else's life. <br>Have the courage to follow your heart and intuition. They somehow already know what you truly want to become. Everything else is secondary. <br>-- Steve Jobs."
         # words = "多少事，从来急；<br>天地转，光阴迫。<br>一万年太久，只争朝夕。<br>-- 教员"

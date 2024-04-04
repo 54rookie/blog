@@ -2,11 +2,11 @@
 <html lang="zh-CN"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="description" content="Nav - http://localhost:1313/search/">
-    <meta name="author" content="Jack - http://localhost:1313/">
+    <meta name="description" content="Search - http://localhost:1313/search/">
+    <meta name="author" content="54rookie - http://localhost:1313/">
     
     <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
-    <title>Nav</title>
+    <title>Search</title>
     <link rel="icon" type="image/png" href="/favicon.ico">
     
     <link rel="stylesheet" href="http://localhost:1313/style.min.d252ad53a5e6b2ae6b8c6c1661107189be3668e36c8dd61697bbe008595a7e04.css">
@@ -27,7 +27,7 @@
 </div>
     <h1 class="title">
         
-            导航
+            搜索
             
         
     </h1>
@@ -68,7 +68,7 @@
 
 
 <div class="container-main 
-     container-nav 
+     container-search 
     ">
 
     <div class="desc">
@@ -77,47 +77,51 @@
     
     <div class="toc">
         
-        <nav id="TableOfContents">
-  <ul>
-    <li><a href="#-分类-one">🌞 <em>分类 ONE</em></a></li>
-    <li><a href="#-分类-two">🔨 <em>分类 TWO</em></a></li>
-    <li><a href="#-分类-three">📑 <em>分类 THREE</em></a></li>
-    <li><a href="#-标签-bookmarks">🔖 <em>标签 BOOKMARKs</em></a></li>
-  </ul>
-</nav>
+        <nav id="TableOfContents"></nav>
     </div>
 
-    <div class='content  content-nav '>
-        <div class="nav">
-<h2 id="-分类-one">🌞 <em>分类 ONE</em></h2>
-<ul>
-<li><a href="/">mineitem one</a></li>
-<li><a href="/archive">mineitem two</a></li>
-<li><a href="https://nav-item-three.com">mineitem three</a></li>
-</ul>
-<h2 id="-分类-two">🔨 <em>分类 TWO</em></h2>
-<ul>
-<li><a href="https://nav-item-three.com">toolitem three</a></li>
-</ul>
-<h2 id="-分类-three">📑 <em>分类 THREE</em></h2>
-<ul>
-<li><a href="/">docitem one</a></li>
-<li><a href="/archive">docitem two</a></li>
-<li><a href="https://nav-item-three.com">docitem three</a></li>
-</ul>
-</div>
-<h2 id="-标签-bookmarks">🔖 <em>标签 BOOKMARKs</em></h2>
-<div class="bookmark">
-<ul>
-<li>bookmark item one <a href="https://bookmark-item-one.com">https://bookmark-item-one.com</a></li>
-<li>bookmark item two <a href="https://bookmark-item-two.com">https://bookmark-item-two.com</a></li>
-<li>bookmark item three <a href="https://bookmark-item-three.com">https://bookmark-item-three.com</a></li>
-</ul>
-</div>
-
+    <div class='content  content '>
+        
     </div>
 
-    
+    <div class="container-search">
+    <div id="data" style="display: none;">
+        
+            
+                [{"content":"this is my first blog!\nhello 我叫王凤群\n","date":"2024-04-04","permalink":"http://localhost:1313/posts/first/","summary":"This is my first blog! Hello 我叫王凤群","title":"first"},]
+            
+        
+            
+                [{"content":"this is my second blog!\nhello 我叫文巫全\n","date":"2024-04-04","permalink":"http://localhost:1313/posts/second/","summary":"This is my second blog! Hello 我叫文巫全","title":"second"},]
+            
+        
+            
+                [{"content":"","date":"0001-01-01","permalink":"http://localhost:1313/about/","summary":"","title":"about"},]
+            
+        
+            
+                [{"content":"\r🌞 分类 one mineitem one mineitem two mineitem three 🔨 分类 two toolitem three 📑 分类 three docitem one docitem two docitem three 🔖 标签 bookmarks bookmark item one https://bookmark-item-one.com bookmark item two https://bookmark-item-two.com bookmark item three https://bookmark-item-three.com ","date":"0001-01-01","permalink":"http://localhost:1313/archive/","summary":"🌞 分类 ONE mineitem one mineitem two mineitem three 🔨 分类 TWO toolitem three 📑 分类 THREE docitem one docitem two docitem three 🔖 标签 BOOKMARKs bookmark item one https://bookmark-item-one.com bookmark item two https://bookmark-item-two.com bookmark item three https://bookmark-item-three.com","title":"archive"},]
+            
+        
+            
+                [{"content":"\r🌞 分类 one mineitem one mineitem two mineitem three 🔨 分类 two toolitem three 📑 分类 three docitem one docitem two docitem three 🔖 标签 bookmarks bookmark item one https://bookmark-item-one.com bookmark item two https://bookmark-item-two.com bookmark item three https://bookmark-item-three.com ","date":"0001-01-01","permalink":"http://localhost:1313/nav/","summary":"🌞 分类 ONE mineitem one mineitem two mineitem three 🔨 分类 TWO toolitem three 📑 分类 THREE docitem one docitem two docitem three 🔖 标签 BOOKMARKs bookmark item one https://bookmark-item-one.com bookmark item two https://bookmark-item-two.com bookmark item three https://bookmark-item-three.com","title":"nav"},]
+            
+        
+            
+                [{"content":"","date":"0001-01-01","permalink":"http://localhost:1313/search/","summary":"","title":"search"},]
+            
+        
+    </div>
+
+    <div id="search">
+        
+        <span class="sc-icon"><img src="/imgs/icons/search.svg" width="48"> </span>
+        <span id="sc-clear" onclick="clearInputVal()">✖</span>
+        <input id="sc-input" oninput="search()" type="text" placeholder="here search search..." />
+        <div id="sc-res"></div>
+    </div>
+    <script src="/js/search.js" defer></script>
+</div>
 
     
 

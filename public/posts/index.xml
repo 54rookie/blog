@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 54rookie</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on 54rookie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 04 Apr 2024 11:16:56 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First</title>
+      <link>http://localhost:1313/posts/first/</link>
+      <pubDate>Thu, 04 Apr 2024 11:16:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/first/</guid>
+      <description>This is my first blog! Hello 我叫王凤群</description>
+    </item>
+    <item>
+      <title>Second</title>
+      <link>http://localhost:1313/posts/second/</link>
+      <pubDate>Thu, 04 Apr 2024 11:16:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/second/</guid>
+      <description>This is my second blog! Hello 我叫文巫全</description>
+    </item>
+  </channel>
+</rss>

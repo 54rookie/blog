@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Walkssi</title>
+    <title>54rookie</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Walkssi</description>
+    <description>Recent content on 54rookie</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
+    <lastBuildDate>Thu, 04 Apr 2024 11:16:56 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Nav</title>
+      <title>First</title>
+      <link>http://localhost:1313/posts/first/</link>
+      <pubDate>Thu, 04 Apr 2024 11:16:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/first/</guid>
+      <description>This is my first blog! Hello 我叫王凤群</description>
+    </item>
+    <item>
+      <title>Second</title>
+      <link>http://localhost:1313/posts/second/</link>
+      <pubDate>Thu, 04 Apr 2024 11:16:56 +0800</pubDate>
+      <guid>http://localhost:1313/posts/second/</guid>
+      <description>This is my second blog! Hello 我叫文巫全</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Archive</title>
       <link>http://localhost:1313/archive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/archive/</guid>
@@ -22,11 +44,11 @@
       <description>🌞 分类 ONE mineitem one mineitem two mineitem three 🔨 分类 TWO toolitem three 📑 分类 THREE docitem one docitem two docitem three 🔖 标签 BOOKMARKs bookmark item one https://bookmark-item-one.com bookmark item two https://bookmark-item-two.com bookmark item three https://bookmark-item-three.com</description>
     </item>
     <item>
-      <title>Nav</title>
+      <title>Search</title>
       <link>http://localhost:1313/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/search/</guid>
-      <description>🌞 分类 ONE mineitem one mineitem two mineitem three 🔨 分类 TWO toolitem three 📑 分类 THREE docitem one docitem two docitem three 🔖 标签 BOOKMARKs bookmark item one https://bookmark-item-one.com bookmark item two https://bookmark-item-two.com bookmark item three https://bookmark-item-three.com</description>
+      <description></description>
     </item>
   </channel>
 </rss>
