@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>编程 on 54rookie</title>
+    <link>http://54rookie.com/tags/%E7%BC%96%E7%A8%8B/</link>
+    <description>Recent content in 编程 on 54rookie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 10 May 2024 11:16:56 +0800</lastBuildDate>
+    <atom:link href="http://54rookie.com/tags/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux</title>
+      <link>http://54rookie.com/posts/linux%E6%93%8D%E4%BD%9C%E6%8C%87%E4%BB%A4/</link>
+      <pubDate>Fri, 10 May 2024 11:16:56 +0800</pubDate>
+      <guid>http://54rookie.com/posts/linux%E6%93%8D%E4%BD%9C%E6%8C%87%E4%BB%A4/</guid>
+      <description>转载自：https://blog.csdn.net/m0_46422300/article/details/104645072 一、基础知识 1.1 Linux系统的文件</description>
+    </item>
+  </channel>
+</rss>

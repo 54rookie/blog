@@ -1,6 +1,6 @@
 $font-family-sans-serif: -apple-system, blinkmacsystemfont, 'Segoe UI', roboto,
     'Helvetica Neue', arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 $font-family-monospace: sfmono-regular, menlo, monaco, consolas, 'Liberation Mono',
     'Courier New', monospace;
 
@@ -56,7 +56,8 @@ $white-900: rgba(255, 255, 255, 0.9);
 // graywhile opacity color
 $gray-white-000: rgba(239, 239, 239, 0);
 $gray-white-100: rgba(239, 239, 239, 0.1);
-$gray-white-200: rgba(239, 239, 239, 0.2);
+// $gray-white-200: rgba(239, 239, 239, 0.2);
+$gray-white-200: rgba(243,237,237, 0.6);
 $gray-white-300: rgba(239, 239, 239, 0.3);
 $gray-white-400: rgba(239, 239, 239, 0.4);
 $gray-white-500: rgba(239, 239, 239, 0.5);

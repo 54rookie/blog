@@ -1,1 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on 54rookie</title><link>http://54rookie.com/tags/</link><description>Recent content in Tags on 54rookie</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><atom:link href="http://54rookie.com/tags/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 54rookie</title>
+    <link>http://54rookie.com/tags/</link>
+    <description>Recent content in Tags on 54rookie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 29 May 2024 10:10:56 +0800</lastBuildDate>
+    <atom:link href="http://54rookie.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>密码学</title>
+      <link>http://54rookie.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</link>
+      <pubDate>Wed, 29 May 2024 10:10:56 +0800</pubDate>
+      <guid>http://54rookie.com/tags/%E5%AF%86%E7%A0%81%E5%AD%A6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>编程</title>
+      <link>http://54rookie.com/tags/%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Fri, 10 May 2024 11:16:56 +0800</pubDate>
+      <guid>http://54rookie.com/tags/%E7%BC%96%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Music</title>
+      <link>http://54rookie.com/tags/music/</link>
+      <pubDate>Thu, 04 Apr 2024 11:16:56 +0800</pubDate>
+      <guid>http://54rookie.com/tags/music/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>http://54rookie.com/tags/test/</link>
+      <pubDate>Thu, 04 Apr 2024 11:16:56 +0800</pubDate>
+      <guid>http://54rookie.com/tags/test/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

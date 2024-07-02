@@ -1,1 +1,75 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>54rookie</title><link>http://54rookie.com/</link><description>Recent content on 54rookie</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 04 Apr 2024 14:53:46 +0800</lastBuildDate><atom:link href="http://54rookie.com/index.xml" rel="self" type="application/rss+xml"/><item><title>First</title><link>http://54rookie.com/posts/first/</link><pubDate>Thu, 04 Apr 2024 11:16:56 +0800</pubDate><guid>http://54rookie.com/posts/first/</guid><description>This is my first blog! Hello 我叫王凤群</description></item><item><title>Second</title><link>http://54rookie.com/posts/second/</link><pubDate>Thu, 04 Apr 2024 11:16:56 +0800</pubDate><guid>http://54rookie.com/posts/second/</guid><description>This is my second blog! Hello 我叫文巫全</description></item><item><title>About</title><link>http://54rookie.com/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://54rookie.com/about/</guid><description/></item><item><title>Archive</title><link>http://54rookie.com/archive/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://54rookie.com/archive/</guid><description>🌞 分类 ONE mineitem one mineitem two mineitem three 🔨 分类 TWO toolitem three 📑 分类 THREE docitem one docitem two docitem three 🔖 标签 BOOKMARKs bookmark item one https://bookmark-item-one.com bookmark item two https://bookmark-item-two.com bookmark item three https://bookmark-item-three.com</description></item><item><title>Nav</title><link>http://54rookie.com/nav/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://54rookie.com/nav/</guid><description>🌞 分类 ONE mineitem one mineitem two mineitem three 🔨 分类 TWO toolitem three 📑 分类 THREE docitem one docitem two docitem three 🔖 标签 BOOKMARKs bookmark item one https://bookmark-item-one.com bookmark item two https://bookmark-item-two.com bookmark item three https://bookmark-item-three.com</description></item><item><title>Search</title><link>http://54rookie.com/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://54rookie.com/search/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>54rookie</title>
+    <link>http://54rookie.com/</link>
+    <description>Recent content on 54rookie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 29 May 2024 10:10:56 +0800</lastBuildDate>
+    <atom:link href="http://54rookie.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>多项式承诺</title>
+      <link>http://54rookie.com/posts/%E5%A4%9A%E9%A1%B9%E5%BC%8F%E6%89%BF%E8%AF%BA/</link>
+      <pubDate>Wed, 29 May 2024 10:10:56 +0800</pubDate>
+      <guid>http://54rookie.com/posts/%E5%A4%9A%E9%A1%B9%E5%BC%8F%E6%89%BF%E8%AF%BA/</guid>
+      <description>1. 什么是承诺 密码学承诺方案是一个涉及两个参与方的的二段式交互协议，参与双方分别被称为承诺方和验证方。该协议共分为三个步骤： 第一阶段被称为承诺阶段，此阶段承诺方通</description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>http://54rookie.com/posts/linux%E6%93%8D%E4%BD%9C%E6%8C%87%E4%BB%A4/</link>
+      <pubDate>Fri, 10 May 2024 11:16:56 +0800</pubDate>
+      <guid>http://54rookie.com/posts/linux%E6%93%8D%E4%BD%9C%E6%8C%87%E4%BB%A4/</guid>
+      <description>转载自：https://blog.csdn.net/m0_46422300/article/details/104645072 一、基础知识 1.1 Linux系统的文件</description>
+    </item>
+    <item>
+      <title>理论知识</title>
+      <link>http://54rookie.com/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Sun, 05 May 2024 11:16:56 +0800</pubDate>
+      <guid>http://54rookie.com/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/</guid>
+      <description>密码学小常识： 什么是IACR： 密码学中最著名的学术会议当属国际密码学协会（IACR，International Association of Cryptological Research）所主办的三个⼤会了：Cry</description>
+    </item>
+    <item>
+      <title>零知识证明</title>
+      <link>http://54rookie.com/posts/%E9%9B%B6%E7%9F%A5%E8%AF%86%E8%AF%81%E6%98%8E/</link>
+      <pubDate>Fri, 05 Apr 2024 11:16:56 +0800</pubDate>
+      <guid>http://54rookie.com/posts/%E9%9B%B6%E7%9F%A5%E8%AF%86%E8%AF%81%E6%98%8E/</guid>
+      <description>这里给出零知识证明的详细内容 零知识证明的相关概念 定义： 证明者（prover）在不向验证者（verifier）提供任何有用的信息的情况下，使验证者（verifie</description>
+    </item>
+    <item>
+      <title>First</title>
+      <link>http://54rookie.com/posts/first/</link>
+      <pubDate>Thu, 04 Apr 2024 11:16:56 +0800</pubDate>
+      <guid>http://54rookie.com/posts/first/</guid>
+      <description>This is my first blog! Hello World !!! 测试一下行内公式 这是一个行内公式：$x_q+x^2$ 你知道$x_1+\varepsilon$等于多少吗？ 测试一下行间公式 这是一个行间公式：$x_</description>
+    </item>
+    <item>
+      <title>Second</title>
+      <link>http://54rookie.com/posts/second/</link>
+      <pubDate>Thu, 04 Apr 2024 11:16:56 +0800</pubDate>
+      <guid>http://54rookie.com/posts/second/</guid>
+      <description>This is my second blog! Hello This is your new vault. Make a note of something, [[create a link]], or try the Importer! When you&amp;rsquo;re ready, delete this note and make the vault your o dada dada da你在干 head1 head 2 1 1 234 This is your new vault. Make a note of something, [[create a link]], or try the Importer! When you&amp;rsquo;re ready, delete this note and make the vault your o dada dada d</description>
+    </item>
+    <item>
+      <title>Archive</title>
+      <link>http://54rookie.com/archive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://54rookie.com/archive/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nav</title>
+      <link>http://54rookie.com/nav/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://54rookie.com/nav/</guid>
+      <description>🌞 分类 ONE 进制转换器 工具大全 百度 🔨 实用工具 进制转换器 工具大全 百度 📑 分类 THREE 进制转换器 工具大全 百度 🔖 标签 BOOKMARKs bookmark item one https://bookmark-item-one.com bookmark item two https://bookmark-item-two.com bookmark item three https://bookmark-item-three.com</description>
+    </item>
+    <item>
+      <title>Search</title>
+      <link>http://54rookie.com/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://54rookie.com/search/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

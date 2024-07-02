@@ -8,17 +8,19 @@ date: 2023-05-26 14:11
 <div class="nav">
 
 ## 🌞 *分类 ONE*
-- [mineitem one](/)
-- [mineitem two](/archive)
-- [mineitem three](https://nav-item-three.com)
+- [进制转换器](https://tool.lu/hexconvert/)
+- [工具大全](https://tool.lu/)
+- [百度](https://nav-item-three.com)
  
-## 🔨 *分类 TWO*
-- [toolitem three](https://nav-item-three.com)
+## 🔨 *实用工具*
+- [进制转换器](https://tool.lu/hexconvert/)
+- [工具大全](https://tool.lu/)
+- [百度](https://nav-item-three.com)
 
 ## 📑 *分类 THREE*
-- [docitem one](/)
-- [docitem two](/archive)
-- [docitem three](https://nav-item-three.com)
+- [进制转换器](https://tool.lu/hexconvert/)
+- [工具大全](https://tool.lu/)
+- [百度](https://nav-item-three.com)
 
 </div>
 
@@ -31,3 +33,5 @@ date: 2023-05-26 14:11
 - bookmark item three https://bookmark-item-three.com
 
 </div>
+
+

@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="零知识证明 - http://54rookie.com/posts/%E9%9B%B6%E7%9F%A5%E8%AF%86%E8%AF%81%E6%98%8E/">
+    <meta name="author" content="54rookie - http://54rookie.com/">
+    
+    <meta name="msvalidate.01" content="B46311949B856F2A7015F366FB3CE878" />
+    <title>零知识证明</title>
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="http://54rookie.com/style.min.535a4dc942d8b3d20690b9071ae15718288c40b644f3421695d5963cdbd58ad1.css">
+    
+    <script type="text/javascript" src="/main.js" defer></script>
+    
+    
+</head>
+<body class=" cool  active-animate">
+        <div id="header"><div class="container-header">
+    <div id="vars" class="container-vars" style="display: none;">
+	{
+		"isSingleColumnOfPostList": true,
+		"hasFoldAllCodeBlocks": false,
+		"svgColor": "",
+		"en": false,
+		"dark": false
+	}
+</div>
+    <h1 class="title">
+        
+            零知识证明
+            
+        
+    </h1>
+
+    <div class="container-breadcrumb-nav">
+    
+    <div class="breadcrumb-nav-bar">
+        <div><a href="/"><svg t="1656411084410" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2954" width="16" height="16"><path d="M947.5 390.6l-377-290c-34.5-26.5-82.6-26.5-117.1 0l-377 290c-14 10.8-16.6 30.9-5.9 44.9 10.8 14 30.9 16.6 44.9 5.9l28.5-21.9V768c0 88.2 71.8 160 160 160h80c35.3 0 64-28.7 64-64V640c0-17.6 14.4-32 32-32h64c17.6 0 32 14.4 32 32v224c0 35.3 28.7 64 64 64h80c88.2 0 160-71.8 160-160V419.4l28.5 21.9c5.8 4.5 12.7 6.6 19.5 6.6 9.6 0 19.1-4.3 25.4-12.5 10.8-13.9 8.2-34-5.8-44.8zM816 768c0 52.9-43.1 96-96 96h-80V640c0-52.9-43.1-96-96-96h-64c-52.9 0-96 43.1-96 96v224h-80c-52.9 0-96-43.1-96-96V370.2l284.5-218.8c11.5-8.8 27.5-8.8 39 0L816 370.2V768z" fill="#6c757d" p-id="2955"></path></svg></a></div>
+        <div><a href="/nav"><svg t="1656411531924" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5827" width="16" height="16"><path d="M849.59197473 125.23018519L139.22930586 391.72854662a23.35052669 23.35052669 0 0 0-14.95414244 21.65490745c-0.12257519 9.70384955 5.61801843 18.46795771 14.40255493 22.04306141l318.42928099 129.25528056 119.51057092 320.39047893c3.06437293 8.23295069 10.35758221 13.89182751 18.7335381 14.87242563l2.7170774 0.14300521a22.79893918 22.79893918 0 0 0 21.20546682-15.36272638l259.51158924-729.54564933a23.8612558 23.8612558 0 0 0-5.31158128-24.55584682 22.3290685 22.3290685 0 0 0-23.9021142-5.43415649zM793.65694081 211.64552314l-196.63064161 552.75171747-91.91077952-246.37564122-253.62799211-102.96295445 542.16941324-203.4131218z" p-id="5828" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/search"><svg t="1656411627509" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1730" width="14" height="14"><path d="M469.333333 85.333333c211.968 0 384 172.032 384 384s-172.032 384-384 384-384-172.032-384-384 172.032-384 384-384z m0 682.666667c164.992 0 298.666667-133.674667 298.666667-298.666667 0-165.034667-133.674667-298.666667-298.666667-298.666666-165.034667 0-298.666667 133.632-298.666666 298.666666 0 164.992 133.632 298.666667 298.666666 298.666667z m362.026667 3.029333l120.704 120.661334-60.373333 60.373333-120.661334-120.704 60.330667-60.330667z" p-id="1731" fill="#6c757d"></path></svg></a></div>
+        <div><a href="/posts"><svg t="1656411724198" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5655" width="12" height="12"><path d="M811.705761 1024H212.294239c-93.1199 0-174.823046-87.570975-174.823046-187.387854V162.322018C37.471193 69.776145 112.604921 0 212.294239 0H596.190595l7.015883 5.93161c111.74388 95.479788 185.857116 170.741078 279.614824 266.093304 29.65805 30.040735 61.165743 62.122454 96.436499 97.393211l7.271006 7.334787v459.859234c-0.063781 99.816879-81.703145 187.387854-174.823046 187.387854zM212.294239 49.94033c-72.391155 0-124.882716 47.261538-124.882716 112.381688v674.290128c0 71.94469 59.507443 137.383743 124.882716 137.383743h599.411522c65.311492 0 124.882716-65.439053 124.882716-137.383743V397.417876c-32.528184-32.464404-61.73977-62.250016-89.356836-90.377328-90.951355-92.418312-163.278729-165.957521-269.601245-257.163999H212.294239z" fill="#6c757d" p-id="5656"></path><path d="M936.588477 449.526752h-212.326129c-99.753099 0-187.324073-81.703145-187.324073-174.823046V49.94033a25.002055 25.002055 0 0 1 49.94033 0v224.763376c0 65.311492 65.502834 124.882716 137.383743 124.882716h212.326129a25.002055 25.002055 0 1 1 0 49.94033z" fill="#6c757d" p-id="5657"></path></svg></a></div>
+        <div><a href="/archive"><svg t="1656411795742" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7334" width="12" height="12"><path d="M884.224 522.24H504.32V141.824c0-16.896-13.824-30.72-30.72-30.72-120.32 0-233.472 47.616-317.952 134.144S26.112 445.952 29.184 566.784c2.56 114.688 49.152 222.72 131.072 304.128 81.92 81.408 189.952 128 304.64 130.56h10.24c117.76 0 227.84-45.568 312.32-128.512 86.528-85.504 133.632-199.68 132.608-321.024-0.512-2.048-1.536-29.696-35.84-29.696z m-140.288 307.712c-74.752 73.728-173.056 112.64-277.504 110.592-205.824-4.608-370.688-169.472-375.296-374.784-3.072-104.448 35.84-202.752 108.544-277.504 65.536-67.072 151.552-107.52 243.712-114.688v378.88c0 16.896 13.824 30.72 30.72 30.72 129.024 0 311.296 0 382.976 0.512-6.144 93.184-46.08 179.712-113.152 246.272z" fill="#6c757d" p-id="7335"></path><path d="M603.136 11.264c-8.192-0.512-15.872 3.072-22.016 8.704-5.632 5.632-9.216 13.824-9.216 22.016v378.88c0 16.896 13.824 30.72 30.72 30.72h378.88c16.896 0 30.72-13.824 30.72-30.72 0-223.744-183.808-407.552-409.088-409.6z m30.208 378.88V74.24c167.424 16.384 301.056 150.016 315.904 315.904h-315.904z" fill="#6c757d" p-id="7336"></path></svg></a></div>
+        <div id="light-dark" style="cursor: pointer;"><a><svg t="1656411842215" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5086" width="12" height="12"><path d="M1007.492874 384.513055c-8.795694-34.58307-21.189627-67.666874-36.682043-99.05151-2.698679-5.397358-10.894667-3.498287-10.894666 2.598728v0.299853c0 32.484098-6.896624 63.868734-19.890263 92.554691-10.694764 23.488501-25.487523 45.077933-43.978471 64.068635-41.779547 42.679107-99.05151 66.967217-158.722299 67.26707-61.869712 0.299853-119.941284-24.188159-162.920244-68.966238-40.280281-41.979449-62.56937-98.251902-62.269516-156.323473 0.399804-59.270984 23.588452-114.94373 65.567901-156.823229 19.59041-19.59041 42.179351-35.082826 66.667364-46.077443C672.956643 71.166451 704.041426 64.469729 736.125719 64.469729h1.299364c6.097015 0 8.096037-8.096037 2.598728-10.794715C708.739126 37.982696 675.655322 25.488812 641.172203 16.493216 599.492607 5.598549 555.714038-0.098662 510.536154 0.001289 222.37722 0.700947-7.41029 237.38508 0.185992 525.444064c7.096526 271.667008 225.889418 490.559851 497.456474 497.856279 287.559228 7.796183 524.14341-220.891864 525.842579-508.551044 0.299853-44.977981-5.297407-88.656599-15.992171-130.236244z m-83.15929 301.552378c-22.588942 53.27392-54.873137 101.250434-95.953027 142.330323-41.179841 41.179841-89.056403 73.464036-142.330324 95.953027-55.172991 23.288599-113.744317 35.182777-174.314666 35.182777s-119.141675-11.794226-174.314666-35.182777c-53.27392-22.588942-101.250434-54.873137-142.330323-95.953027-41.179841-41.179841-73.464036-89.056403-95.953027-142.330323C75.749001 630.892442 63.954774 572.221164 63.954774 511.750767s11.794226-119.141675 35.182777-174.314666c22.588942-53.27392 54.873137-101.250434 95.953027-142.330323 41.179841-41.179841 89.056403-73.464036 142.330323-95.953027C392.593892 75.7642 451.26517 63.969974 511.735567 63.969974c13.99315 0 27.886348 0.599706 41.679596 1.89907C489.246577 118.643209 448.266638 198.704016 448.266638 288.360126c0 159.022152 128.836929 287.859081 287.859081 287.859081 89.156354 0 168.817357-40.580134 221.691473-104.149015 1.099462 13.09359 1.699168 26.387082 1.699168 39.680575 0 60.470397-11.794226 119.141675-35.182776 174.314666z" p-id="5087" fill="#6c757d"></path></svg></a></div>
+        
+    </div>
+
+    
+</div>
+
+            <div id="toc">📜</div>
+        
+    
+    
+</div>
+</div>
+        <div id="content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-main 
+     container-page 
+">
+
+
+
+    <div class="desc">
+        
+        <span>
+            
+            <svg t="1656736000388" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7409" width="12" height="12"><path d="M524.885333 338.986667L200.362667 663.466667c-17.28 15.274667-27.989333 36.693333-29.696 56.234666v133.76l130.730666 0.085334c22.784-1.621333 43.989333-12.245333 61.013334-31.701334l322.688-322.645333-160.213334-160.213333z m60.373334-60.330667l160.170666 160.213333 102.144-102.144a19.712 19.712 0 0 0 0-27.861333L715.093333 176.426667a19.456 19.456 0 0 0-27.605333 0L585.258667 278.613333zM701.312 85.333333c27.946667 0 54.741333 11.136 74.282667 30.848l132.309333 132.309334a105.045333 105.045333 0 0 1 0 148.565333L424.874667 879.957333c-29.824 34.346667-72.106667 55.466667-120.448 58.794667H85.333333v-42.666667l0.128-179.84c3.626667-44.970667 24.576-86.826667 56.448-114.944l485.12-485.034666A104.789333 104.789333 0 0 1 701.269333 85.333333z" p-id="7410" fill="#adb5bd"></path></svg>
+            2024-04-05&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737270708" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="23838" width="11" height="11"><path d="M824.264 95.36c0-23.859 25.043-44.16 48.902-44.16s49.714 20.301 49.714 44.16v190.08c0 23.859-19.054 52.868-42.913 52.868h-190.08c-23.859 0-46.696-25.96-46.696-49.819s22.55-46.249 46.409-46.249h82.025C702.344 175.534 610.22 155.853 512 155.853c-206.775 0-360.398 149.372-360.398 356.147 0 206.775 153.623 358.23 360.398 358.23 206.775 0 357.467-151.455 357.467-358.23 0-23.859 23.634-50.706 53.413-50.706 29.78 0 49.92 26.847 49.92 50.706 0 254.493-206.307 460.8-460.8 460.8-254.493 0-460.8-206.307-460.8-460.8C51.2 257.507 257.507 51.2 512 51.2c122.4 0 226.684 33.296 312.264 117.369 0.358 0.351 0.358-24.052 0-73.209z" p-id="23839" fill="#adb5bd"></path></svg>
+            2024-04-05&nbsp;&nbsp;&nbsp;
+        </span>
+        <span>
+            
+            <svg t="1656737548689" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="33866" width="12" height="12"><path d="M832.038608 64.662657H192.030028C121.255125 64.662657 63.940169 121.98845 63.940169 192.694717v446.793671C63.940169 710.205493 121.255125 767.643272 192.030028 767.643272h133.353183a63.940169 63.940169 0 0 1 55.219742 31.576328l76.099638 129.83828c12.358154 21.093031 33.790754 31.626903 55.216129 31.626903s42.832688-10.544709 55.198067-31.619678l76.222461-129.870792a63.940169 63.940169 0 0 1 55.212517-31.551041h133.54103c70.576219 0 127.732228-57.289669 127.732227-127.800865V192.391272C959.825022 121.85479 902.643727 64.662657 832.038608 64.662657zM895.884854 639.842407A63.85347 63.85347 0 0 1 832.092795 703.703103h-133.54103a127.753903 127.753903 0 0 0-110.349172 63.09847l-76.222461 129.856342a0.274545 0.274545 0 0 1 0-0.050574h-0.032512s-0.021675 0.061411-0.032512 0.061412l-76.1466-129.85273A127.804477 127.804477 0 0 0 325.383211 703.703103H192.030028A64.207489 64.207489 0 0 1 127.880338 639.488388V192.694717A64.102729 64.102729 0 0 1 192.030028 128.602826h640.00858A63.799284 63.799284 0 0 1 895.884854 192.391272v447.451135z" fill="#adb5bd" p-id="33867"></path><path d="M608.154093 288.092004A31.970084 31.970084 0 0 0 576.184009 320.062089v160.078006l-134.650049-179.278119A31.970084 31.970084 0 0 0 384.002258 320.062089v255.760676a31.970084 31.970084 0 0 0 63.940169 0v-159.958796l134.650048 179.274507a31.970084 31.970084 0 0 0 57.531703-19.200113V320.062089a31.970084 31.970084 0 0 0-31.970085-31.970085z" fill="#adb5bd" p-id="33868"></path></svg>
+            9836 字</span>&nbsp;
+        <span>
+            
+            <svg t="1656737462334" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="32892" width="12" height="12"><path d="M512 74.666667C270.933333 74.666667 74.666667 270.933333 74.666667 512S270.933333 949.333333 512 949.333333 949.333333 753.066667 949.333333 512 753.066667 74.666667 512 74.666667z m0 810.666666c-204.8 0-373.333333-168.533333-373.333333-373.333333S307.2 138.666667 512 138.666667 885.333333 307.2 885.333333 512 716.8 885.333333 512 885.333333z" p-id="32893" fill="#adb5bd"></path><path d="M695.466667 567.466667l-151.466667-70.4V277.333333c0-17.066667-14.933333-32-32-32s-32 14.933333-32 32v238.933334c0 12.8 6.4 23.466667 19.2 29.866666l170.666667 81.066667c4.266667 2.133333 8.533333 2.133333 12.8 2.133333 12.8 0 23.466667-6.4 29.866666-19.2 6.4-14.933333 0-34.133333-17.066666-42.666666z" p-id="32894" fill="#adb5bd"></path></svg>
+            20 分钟</span>
+            <div class="container-ctgtag">
+	<div class="taxonomy">
+		
+		<div class="ctg">
+			
+			
+		</div>
+		<div class="tag">
+			
+			 - 
+			
+			<a href="/tags/%E5%AF%86%E7%A0%81%E5%AD%A6">密码学</a>
+			
+		</div>
+	</div>
+</div>
+        
+    </div>
+    
+    <div class="toc">
+        
+        <div class="page-operation">
+            <div><a href="#"><img src="/imgs/icons/arrow-up-circle.svg" alt=""></a></div>
+            <div><a href="http://54rookie.com/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/"><img src="/imgs/icons/arrow-left-circle.svg" alt=""></a></div>
+            <div><a href="http://54rookie.com/posts/first/"><img src="/imgs/icons/arrow-right-circle.svg" alt=""></a></div>
+        </div>
+        
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#零知识证明的相关概念">零知识证明的相关概念</a></li>
+        <li><a href="#直观举例">直观举例</a></li>
+        <li><a href="#sigma协议">Sigma协议</a></li>
+        <li><a href="#fait-shamir启发式">Fait-Shamir启发式</a></li>
+        <li><a href="#zk-snark">zk-SNARK</a></li>
+        <li><a href="#参考文献">参考文献</a></li>
+        <li><a href="#补充">补充：</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+
+    <div class='content  content '>
+        <blockquote>
+<p>这里给出零知识证明的详细内容</p>
+</blockquote>
+<p><a name="eS7nG"></a></p>
+<h3 id="零知识证明的相关概念">零知识证明的相关概念</h3>
+<p><a name="AwO4B"></a></p>
+<h4 id="定义">定义：</h4>
+<blockquote>
+<ul>
+<li>证明者（prover）在不向验证者（verifier）提供任何有用的信息的情况下，使验证者（verifier）相信某个论断是正确的。</li>
+</ul>
+</blockquote>
+<p><a name="FbNF1"></a></p>
+<h4 id="需要满足的满足的条件"><strong>需要满足的满足的条件：</strong></h4>
+<blockquote>
+<ol>
+<li>完备性（Completeness）：只要证明者拥有相应的知识，那么就能通过验证者的验证，即证明者有足够大的概率使验证者确信。；</li>
+<li>可靠性（Soundness）：如果证明者没有相应的知识，则无法通过验证者的验证，即证明者欺骗验证者的概率可以忽略。</li>
+<li>零知识性（Zero-Knowledge）：证明者在交互过程中仅向验证者透露是否拥有相应知识的陈述，不会泄露任何关于知识的额外信息。</li>
+</ol>
+</blockquote>
+<p><a name="aqTda"></a></p>
+<h3 id="直观举例">直观举例</h3>
+<p><a name="GveKT"></a></p>
+<h4 id="交互式零知识证明">交互式零知识证明：</h4>
+<blockquote>
+<ul>
+<li>交互式的零知识证明指的是：证明者（prover）与验证者（verifier）通过若干轮的交互，使得验证者相信证明者确实拥有某个秘密，且证明者不能得到这个秘密的任何信息。</li>
+<li>色盲游戏
+<ul>
+<li>Alice是色盲，Bob不是色盲，在Bob手上有两个大小，形状完全一样的球，但这两个球的颜色不一样，一个球是蓝色的，另一个球是红色的，由于Alice是色盲，所以Alice无法分辨这两个球是否是一样的，Bob需要向Alice证明这两个球是不一样的。在这里，Alice被称为验证者，他需要验证Bob的陈述正确与否，Bob被称为证明者，他需要证明自己的陈述（存在两个颜色不一样的球），Bob需要在Alice不能获得两个球的颜色的情况下，向Alice证明这两个球的颜色是不一样的这个事实，这与零知识证明的定义是相符合的。</li>
+<li>Alice当Bob的面拿起两个球，左手拿蓝球，右手拿红球，然后将双手放到背后，这样Bob就看不到Alice手上的球了，Alice在背后随机交换左右手上的球，交换完成后Alice将手伸出，并询问Bob两个球是否交换过位置，如果Bob能看到球上的颜色，那么每次Alice换过球的位置后，Bob都能正确回答出Alice的问题。</li>
+<li>第一次，Alice偷偷交换了手中球的位置，然后Alice问Bob是否交换了球的位置，如果Bob回答Yes，那么Alice有50%的概率相信Bob是可以区分这两个球的颜色，因为Bob有1/2的概率蒙对，所以Alice可以在进行一次测试。如果Bob回答No，那么Alice可以肯定Bob不能区分两个球的颜色。</li>
+<li>第二次，Alice没有交换手中球的位置，然后Alice问Bob是否交换了球的位置。如果Bob回答No，那么Alice有75%的概率相信Bob是可以区分两个球的颜色。</li>
+<li>第一次迭代后，Alice可以说Bob陈述的断言为真的概率为50％。如果Bob第二次回答正确，那么Alice可以说Bob陈述为真的概率达75％。在第三次迭代后，它将是87.5％。如果连续n次Bob都通过了检查，则Alice有1-(1/2)^n 的概率可以认为 Bob 说的是真的，这两个球的确是有红蓝两种颜色。</li>
+<li>零知识证明是一种基于概率的验证方式，验证者（verifier）基于一定的随机性向证明者（prover)提出问题，如果证明者都能给出正确回答，则说明证明者大概率拥有他所声称的“知识”。零知识证明并不是数学意义上的证明，因为它存在小概率的误差，欺骗的证明者有可能通过虚假的陈诉骗过验证者。换句话说，零知识证明是概率证明而不是确定性证明，但是也存在技术能将误差降低到可以忽略的值。</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p><a name="Tkhsw"></a></p>
+<h4 id="非交互式零知识证明">非交互式零知识证明：</h4>
+<blockquote>
+<ul>
+<li>交互式零知识证明协议依赖于验证者的随机尝试，需要证明者和验证者进行多次交互才能完成。非交互式零知识证明（Non-Interactive Zero-Knowledge, NIZK）将交互次数减少到一次，可实现离线证明和公开验证。在区块链等零知识证明应用场景中，非交互的性质是必须的，因为在区块链系统中，不能假设双方一直在线进行交互，在区块链网络上，证明者只要向全网广播一条证明交易，网络上的矿工在将这条交易打包到区块中的时候就帮验证者完成了零知识证明的校验。</li>
+<li>数独游戏
+<ul>
+<li>数独是源自18世纪瑞士的一种数学游戏，是一种运用纸、笔进行演算的逻辑游戏。玩家需要根据9×9盘面上的已知数字，推理出所有剩余空格的数字，并满足每一行、每一列、每一个粗线宫（3*3）内的数字均含1-9，不重复。【下图给出了一个数独游戏的题目，将空白部分填满即可赢得游戏】
+<img src="https://image.54rookie.com/blog/171568876820240514201247.png" alt=""></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>Alice为了向Bob证明他已经解决了一个数独难题，创建了一个防篡改的机器M。Alice将生成好的数独答案放入到机器M中，机器M可以向Bob发送证明。Alice的机器遵循以下公开可验证的协议：</li>
+<li>首先，Alice在机器中放入尚未被解决的原始数独题目，数独中的谜题卡片三张正面朝上，例如，单元格C3具有3张正面朝上的9号卡片。【即，在3行9列的位置正面朝上放三张数字9的卡片】</li>
+<li>则上述题目在机器M中的样子如下图：
+<img src="https://image.54rookie.com/blog/171568879220240514201312.png" alt=""></li>
+<li>机器中每个位置都放了三张卡片，这是因为最后验证的时候，每个位置需要验证“行，列，九宫格”，故需要三张卡片。</li>
+<li>接下来，Alice上机器将他的答案正面朝下放置在相应的单元格上，同样也是每个单元格放三张。得到如下结果：</li>
+<li><img src="https://image.54rookie.com/blog/171568881320240514201333.png" alt=""></li>
+<li>最后Bob向机器获取证明，机器返回给Bob27个袋子：
+<ul>
+<li>机器将数独中每一行9张卡片取出，并分别混淆后放入一个袋子中，一共有9行，所以9个袋子</li>
+<li>机器将数独中每一列9张卡片取出，并分别混淆后放入一个袋子中，一共有9列，所以9个袋子</li>
+<li>机器将数独中每个粗线宫（3*3）内卡片取出，并分别混淆后放入一个袋子中，一共有9个，所以9个袋子</li>
+</ul>
+</li>
+<li>Bob分别对这27个袋子进行检查，如果每个袋子中的卡片都包含数字1到9，而且没有任何数字丢失或重复，那么Bob可以确认Alice的确解开了数独，并且Bob并没有从机器返回的证明中获取任何关于数独解的知识，因为机器返回给Bob袋子中的数据是被随机打乱的。</li>
+</ul>
+</blockquote>
+<p>参考文献</p>
+<blockquote>
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/152065162">零知识证明介绍</a></li>
+</ul>
+</blockquote>
+<p><a name="eLhox"></a></p>
+<h3 id="sigma协议">Sigma协议</h3>
+<p><a name="B4dPK"></a></p>
+<h4 id="预备知识">预备知识</h4>
+<blockquote>
+<p><strong>Definition 1: (Effective relation)【有效关系】</strong></p>
+<ul>
+<li>指的是一组二元关系$R ⊆ X × Y$ 其中 $X,Y,R$ 为有效的可辨认的有限集合。 $Y$ 中的元素被称作statements【声明】。如果$(x,y) ⊆  R$，则称 x 为 y 的witness【证据】</li>
+</ul>
+</blockquote>
+<br />
+> **Definition 1: (homomorphisms maps)【同态映射】**
+> ![](https://image.54rookie.com/blog/171568884420240514201404.png)
+> 参考文献：[https://zhuanlan.zhihu.com/p/622105041](https://zhuanlan.zhihu.com/p/622105041)
+<p><a name="fbqW7"></a></p>
+<h4 id="sigma的定义">Sigma的定义</h4>
+<blockquote>
+<p>**Definition 2: (Sigma protocol)【Sigma协议】 **</p>
+<ul>
+<li>设 $R ⊆ X × Y$是一个effective relation。那么一对 $(P,V)$ 构建在 $R$ 上的一个Sigma protocol 为：
+<ul>
+<li>
+<p>P 是一个叫做 prover 的交互式协议，其输入为一个（witness，statement）对。即$(x,y) ⊆ R$</p>
+</li>
+<li>
+<p>V 是一个叫做 verifier 的交互式协议，其输入为一个 statement ，即 $y ⊆  Y$</p>
+</li>
+<li>
+<p>P 和 V 的三轮交互满足下面三个性质，即【正确性】【知识可靠性】和【HVZK】</p>
+</li>
+<li>
+<p>P 和 V 的交互过程为：【如下图】</p>
+<ul>
+<li>首先 P 计算一个<strong>承诺(commitment) t</strong> ，将其发送给 V ；</li>
+<li>在收到了来自 P 的消息 t 后， V在有限的挑战空间C中随机选取一个<strong>挑战(challenge) c</strong>，并将其发送给 P ；</li>
+<li>在接收到来自 V 的挑战 c 后， P 计算出一个<strong>响应(response) z</strong> ,将其发送给 V ；</li>
+<li>在收到了来自 P 的消息 t 后,V 输出accept或者reject。 V 的输出由statement y 和交互中的消息 conversation$(t,c,z)$ 严格计算得出。
+<img src="https://image.54rookie.com/blog/171568886320240514201423.png" alt=""></li>
+</ul>
+</li>
+<li>
+<p>协议的要求是，对于所有的 $(x,y) \in R$ ，当$P(x,y) 与 V(y)$交互后， $V(y)$ 总是输出accept。为了系统的安全性，挑战空间的大小应该为sup-poly（超过多项式大小）。</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Definition 3: (Correctness)【正确性】</strong></p>
+<ul>
+<li>
+<p>设$(P,V)$是关于关系$R ⊆ X × Y$ 的一个Sigma协议。如果对于任意的$(x,y)∈R$，验证者 V 都接受证明者 P 的证明，那么称这个Sigma协议具有正确性。</p>
+</li>
+<li>
+<p>关于<strong>Correctness</strong>的一些说明：</p>
+<ul>
+<li>正确性显然是一个协议应该满足的最基本的是性质，如果协议不满足正确性，那么就无法达成构造这个协议最初的目的&ndash;向别人证明自己拥有秘密。</li>
+</ul>
+</li>
+</ul>
+<p><strong>Definition 4: (Special honest verifier zero knowledge)【HVZK】</strong></p>
+<ul>
+<li>
+<p>设 $(P,V)$是关于关系 $R ⊆ X × Y$ 的一个Sigma协议，且挑战空间为 C 。如果存在一个高效的概率性算法 $Sim(Y,C)$(称作simulator），其输入为 $(y,c) \in Y\times C$ 且满足：</p>
+<ol>
+<li>对于所有的输入$(y,c) \in Y\times C$，模拟器$Sim(Y,C)$ 能够输出一对 $(t,z)$使得$(t,c,z)$对于statement$Y$来说是一个被 accpeted 的 conversation。</li>
+<li>对于全体$(x,y) \in R$，我们随机选择$c&rsquo;\stackrel{R}{\longleftarrow}C$，然后用模拟器计算$(t&rsquo;,z&rsquo;)\stackrel{}{\longleftarrow}Sim(y,c)$。使得**《模拟器产生的**$(t&rsquo;,c&rsquo;,z&rsquo;)$<strong>的分布》<strong>与</strong>《正常运行Sigma协议</strong>$(P,V)$<strong>得到的</strong>$(t,c,z)$**的分布》**相同，我们称Sigma协议$(P,V)$是 special HVZK 。Special的原因在于：
+<ul>
+<li>1） Sim 需要 c 作为额外输出；</li>
+<li>2）就算 y 的 witness 不存在，<strong>Sim</strong> 也可以输出一个被 accepted 的 conversation。</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>HVZK的一些说明:
+- 由于** Sim **产生的$(t&rsquo;,c&rsquo;,z&rsquo;)$与正常运行Sigma协议产生的$(t,c,z)$在计算上不可区分,所有敌手不可能从$(t,c,z)$得知到任何关于秘密 x 的信息.<br>
+- 这是因为, 如果敌手能从$(t,c,z)$中得到秘密 x 的信息 , 那么由于$(t,c,z)$和$(t&rsquo;,c&rsquo;,z&rsquo;)$不可区分,则这个敌手也能从$(t&rsquo;,c&rsquo;,z&rsquo;)$中得知秘密 x 的信息. 这是不可能的 , 因为$(t&rsquo;,c&rsquo;,z&rsquo;)$中根本不含由秘密 x .
+-  上述模拟器$Sim(Y,C)$不具备秘密值 x ，但拥有一个能力 **决定或者预知 **验证者的挑战值 c  。</p>
+<pre><code>- 如果能够构造出一个式Sim，它产生的三元组$(t,c,z)$与Sigma协议产生的三元组是不可区分的。由于Sim产生的三元组跟秘密并没有任何关系，且诚实的验证者不能区分两个二元组，所以诚实的验证者不能从Sigma协议的三元组中得到任何秘密的信息。【否则他可以根据这个秘密信息区分两个三元组】
+</code></pre>
+</li>
+</ul>
+</blockquote>
+<br />
+> **Definition 5: (Knowledge soundness)【知识可靠性】**
+> - 设$(P,V)$是关于关系$R ⊆ X × Y$ 的一个Sigma协议。如果存在一个高效的确定性的算法$Ext$【称作一个witness extractor】使得：
+>    - 给定一个statement $y$ ，以及两个关于 $y$ 被 accepted 的 conversation $(t,c,z) 和 (t,c',z')$，并且$c \ne c'$，存在**《提取器**$Ext$**》**能够输出 $x \in X$使得$(x,y) \in R$（ x 是 y 的witness）
+>    - 即存在一个**《提取器**$Ext$**》**使得：$Ext((t,c,z),(t,c',z'))=x$；则我们称$(P,V)$提供 【知识可靠性】knowledge soundness。
+> 
+> - Knowledge soundness的一些说明：
+>    - 如果协议具备这一性质，那么一个不诚实的证明者至多只能伪造一个可以被接受的响应。 因为，如果他能够伪造多于1个的响应，他必然知道秘密值 x  。
+>    - 这是因为，不诚实的证明者不知道秘密 x ，而如果他伪造了两个被接受的响应，那么就可以使用上面所说的**《提取器**$Ext$**》**提取出秘密 x 。这与证明者不知道秘密 x 相矛盾。
+>    - 上述性质说明，任何人都可以通过公开交互信息获取证明者的秘密 x 。
+>    - 这个性质主要约束了恶意的prover P，保证verifier V能通过交互推出来 P 到底有没有骗自己；换句话说，如果证明方 P 没有witness $x$，那么P无法说服 V 相信他确实有证据$x$。所以可以理解为：它存在的意义就是让 P 不要说谎，否则作为验证者就能发现，可视为对 P 的约束。(【5】中大佬的观点 )
+> 
+<p><a name="WRwRa"></a></p>
+<h4 id="sigma协议的例子">Sigma协议的例子</h4>
+<blockquote>
+<p>说明：</p>
+<ul>
+<li>下面的协议中，只有Schnorr协议给出了三个性质的证明，其它证明可以去参考文献【5】中查看。</li>
+</ul>
+</blockquote>
+<blockquote>
+<p><strong>Schnorr协议过程：</strong></p>
+<ul>
+<li>设 $\mathbb{G}$是一个阶为素数 q 的循环群，其生成元为$g \in \mathbb{G}$ 。设证明人 P 保存私钥$\alpha \in \mathbb{Z}_q$，对应的公钥匙为 $u = g^{\alpha} \in \mathbb{G}$ 。 P 需要向 V 证明其拥有$\alpha$。这里 $\alpha$是 witness， $u=g^{\alpha}$是 statement。Schnorr 身份认证协议过程为：【如下图】
+- P 计算$\alpha_t \stackrel{R}{\longleftarrow}\mathbb{Z}_q,\ u_t\stackrel{R}{\longleftarrow}g^{α_t}$，并将 $u_t$发送给 V ;	【$commitment=u_t$】
+- V 计算$c\stackrel{R}{\longleftarrow}C ,\ \ \  C \subset \mathbb{Z}_q$并将 c 发送给 P ；	    	【$challenge=c$】
+- P 计算$\alpha_z \leftarrow \alpha_t + \alpha c$，并将$\alpha_z$发送给 V ；		【$response=\alpha_z$】
+- V 检查如果 $g^{a_z} = u_t \cdot u^c$ ；V 输出accept，否则输出reject。</li>
+</ul>
+</blockquote>
+<p><img src="https://image.54rookie.com/blog/171568891420240514201514.png" alt=""></p>
+<blockquote>
+<ul>
+<li>安全性：
+<ul>
+<li>Schnorr&rsquo;s protocol 的安全性是构建在离散对数问题上的，其证明的方式为假设攻击者在不知道 $\alpha$ 可以构建对于一个 u 合法的 conversations，那么我们就可以利用攻击者的能力来解决离散对数问题。由于逆否命题是等价，如果离散对数问题无法攻破，那么Schorr&rsquo;s protocol 就是安全的。</li>
+<li>proof：
+<ul>
+<li>假设攻击者对于 u 可以产生两个被 accepted 的 conversation$(u_t,c,\alpha_z)$ 和 $(u_t,c&rsquo;,\alpha&rsquo;_z)$且他们满足$c \neq c&rsquo;$，则有$g^{\alpha_z}=u_t \cdot u^c$以及 $g^{\alpha&rsquo;<em>z}=u_t \cdot u^{c&rsquo;}$成立，将两式相除得 $g^{\Delta \alpha}= u^{\Delta c}$,其中 $\Delta \alpha = \alpha_z - \alpha&rsquo;</em>{z}$；$\Delta c = c-c&rsquo;$。由于$\Delta c \ne 0$ ，且群$\mathbb{G}$ 是素数阶得循环群，因此有$1/ \Delta c \in \mathbb{G}$，则有 $g^{\Delta z/\Delta c} = u$，故我们得到了离散对数问题$Dlog_gu$ 的解 $\Delta z/ \Delta c$。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>HVZK：
+<ul>
+<li>证明 HVZK 在于如何构建一个产生 conversation 并被 verifier 接受的 <strong>Sim(u)</strong> ，且由 <strong>Sim</strong> 产生出来的conversation 中元素的分布和正常 P，V 交互产生的 conversation 中元素的概率分布相同。如果我们设 vk = u ，则 Sim 计算：$\begin{align}
+&amp;α_z \stackrel{R}{\leftarrow} Z_q
+&amp;c \stackrel{R}{\leftarrow} C \ \ \
+&amp;u_t ←g^{α_z}/u^c
+\end{align}$</li>
+<li>在真实的交互过程中， c 和 $\alpha_z$分别在挑战空间 C 和 $\mathbb{Z}_q$ 中服从均匀分布，且 $c,\alpha_z$ 相互独立。此外 $u_t$是由$g^{\alpha_z}=u_t \cdot u^c$唯一确定的，因此可以明显看出， <strong>Sim</strong> 产生的 conversation 中元素的概率分布同正常交互所产的 conversation 中元素的概率分布相同。</li>
+</ul>
+</li>
+<li>Knowledge soundness：
+<ul>
+<li>由Knowledge soundness 的定义以及Schnorr&rsquo;s protocol的安全性分析可知，Schnorr&rsquo;s protocol满足Knowledge soundness。</li>
+<li>
+<br />
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p><strong>Okamoto协议过程</strong></p>
+<blockquote>
+<ul>
+<li>设$\mathbb{G}$是一个阶为素数 q 的循环群，其生成元为 $g \in \mathbb{G}。 h \in \mathbb{G}$是群中任意一个元素。Okamoto’s protocol中的关系为：$R={ (\alpha,\beta),u) \in \mathbb{Z}^2_q \times \mathbb{G} : g^{\alpha}h^{\beta}=u }$</li>
+<li>协议的过程如下图：【其中 $C \subset \mathbb{Z}_q$】
+- 【$commitment=u_t$】
+- 【$challenge=c$】
+- 【$response=(\alpha_z,\beta_z)$】</li>
+</ul>
+</blockquote>
+<p><img src="https://image.54rookie.com/blog/171568893320240514201533.png" alt=""></p>
+<blockquote>
+<p><strong>The Chaum-Pedersen协议过程</strong></p>
+<ul>
+<li>该协议基于DH-triples。设$\mathbb{G}$是一个阶为素数 q 的循环群，其生成元为 $g \in \mathbb{G}$。对于 $(\alpha,\beta,\gamma) \in \mathbb{G}$如果$\alpha \beta = \gamma$我们就说$(g^\alpha,g^\beta,g^\gamma)$是一个DH-triples【DH三元组】。等价的，如果$(u,v,w)$是一个DH-tripes，当且仅当存在一个$\beta \in \mathbb{Z_q}$ 使得$v= g^\beta , w = u^\beta$ 。在Chaum-Pedersen 协议中的关系 <strong>R</strong>为：$R:= { (\ \beta,(u,v,w)\ ) \in \mathbb{Z}_q \times \mathbb{G}^3 : v=g^\beta ,w=u^\beta }$;</li>
+<li>协议的过程为：【其中$C \subset \mathbb{Z}_q$】
+- 【$commitment=(w_t,v_t)$】
+- 【$challenge=c$】
+- 【$response=\beta_z$】</li>
+</ul>
+</blockquote>
+<p><img src="https://image.54rookie.com/blog/171568897020240514201610.png" alt=""></p>
+<p><a name="YpAxu"></a></p>
+<h4 id="线性sigma协议">线性Sigma协议</h4>
+<blockquote>
+<p><strong>线性Sigma协议：</strong></p>
+<ul>
+<li>上述Schnorr, Okamoto, 和 Chaum- Pedersen 协议都是一种更加一般的 Sigma protocol 的特例。这种更加一般的 Sigma protocol 是要证明元素之间的线性关系。设$\mathbb{G}$是一个阶为素数 q 的循环群，它的生成元为$g \in \mathbb{G}$我们考虑一个布尔函数 $\phi$：</li>
+</ul>
+</blockquote>
+<p>$\phi (x_1,x_2,&hellip;,x_n):={u_1=\prod_{j=1}^{n}g_{1j}^{x_j}\  \wedge \ u_2=\prod_{j=1}^{n}g_{2j}^{x_j} \wedge &hellip; \wedge
+u_m=\prod_{j=1}^{n}g_{mj}^{x_j} }$</p>
+<blockquote>
+<ul>
+<li>在函数 $\phi$ 中， $g_{ij} ,u_i \in \mathbb{G}$。这些群元素一部分可以是系统参数甚至是常量，另一些元素是针对函数的特殊变量。$x_i \in \mathbb{Z}_q$是函数$\phi$的入参，当函数中的所有等式成立则$\phi$返回true。对于这样函数的一个特定的类 F ，我们可以定义一个关系：
+<ul>
+<li>$R:= {((\alpha_1,&hellip;,\alpha_n),\phi) \in \mathbb{Z}_q^n \times F: \phi(\alpha_1,&hellip;,\alpha_n)= true }$</li>
+<li>在** R** 中，一个<strong>函数</strong>$\phi$<strong>是一个 statement</strong>，而一个<strong>使得这个函数</strong>$\phi$<strong>为 true 的 <strong>$(\alpha_1,&hellip;,\alpha_n) \in \mathbb{Z}_q^n$</strong> 是这个函数 <strong>$\phi$</strong> 的 witness</strong> 。而我们称这样的协议为 linear protocols 的原因在于如果我们对函数$\phi$中的等式取对数可以得到：</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>$Dlog_g({u_j})= \sum_{j=1}^n x_i \cdot Dlog_g(g_{ij}) \ \ \ \ \ (i=1,&hellip;,m)$</p>
+<blockquote>
+<ul>
+<li>对于一般 linear Sigma protocol 的过程为：</li>
+</ul>
+</blockquote>
+<p><img src="https://image.54rookie.com/blog/171568899720240514201637.png" alt=""></p>
+<blockquote>
+<p><strong>补充：</strong></p>
+<ul>
+<li>
+<p>在上述 Schnorr‘s protocol 中
+- $P((\alpha_1,&hellip;,\alpha_n),\phi)$中，n = 1，$\phi(x):= {u=g^x}$
+- $\alpha_{tj}$中，j = 1 ;
+- $u_{tm}$中，m = 1 ; 			【$u_{tm}$事实上就是承诺$\phi(\alpha_{t1})$】
+- 将上面的条件代入即可得到 Schnorr协议</p>
+</li>
+<li>
+<p>在上述 Okamoto&rsquo;s protocol 中
+- $P((\alpha_1,&hellip;,\alpha_n),\phi)$中，n = 2 ; $\phi(x,y) := {u=g^xh^y}$
+- $\alpha_{tj}$中，j = 2 ;
+- $u_{tm}$中，m = 1 ;			【$u_{tm}$事实上就是承诺$\phi(\alpha_{t1},\alpha_{t2})$】
+- 将上面的条件代入即可得到 Okamoto 协议</p>
+</li>
+<li>
+<p>The Chaum-Pedersen protocol中
+- $P((\alpha_1,&hellip;,\alpha_n),\phi)$中，n = 1 $\phi(x) := { v=g^x \wedge w=u^x}$
+- $\alpha_{tj}$中，j = 1 ;
+- $u_{tm}$中，m = 2 ;			【$u_{tm}$事实上就是承诺$\phi(\alpha_{t1})$】
+- 将上面的条件代入即可得到 The Chaum-Pedersen 协议</p>
+</li>
+<li>
+<p>对于一般的 linear protocol 是一个关于关系 R 的 Sigma协议并且满足knowledge soundness以及special HVZK。</p>
+</li>
+</ul>
+</blockquote>
+<p><a name="wOTPz"></a></p>
+<h4 id="基于同映射的sigma协议">基于同映射的Sigma协议</h4>
+<blockquote>
+<p><strong>基于同态映射的Sigma协议</strong></p>
+<ul>
+<li>我们可以利用群同态来更加清晰高效的来描述到目前为止的介绍的所有Sigma协议。设$\mathbb{H}_1,\mathbb{H}_2$是两个不知道阶的交换群，以及一个同态映射$\varphi: \mathbb{H}_1 \to \mathbb{H}_2$。为了表达的方便， 群$\mathbb{H}_1$中的运算为群加法， 群$\mathbb{H}_2$中的运算为群乘法。设$u \in \mathbb{H}_2$，证明者需要向验证着证明他知道在映射$\varphi$下 u 的原象。在这种Sigma protocol中，关系为：</li>
+</ul>
+</blockquote>
+<p>$R:={(\alpha,(u,\varphi)) \in \mathbb{H}_1 \times (\mathbb{H}_2 \times F):\varphi(\alpha)=u}$</p>
+<blockquote>
+<p>其中$\alpha \in \mathbb{H}_1$是映射 $\varphi$ 对于 $u \in \mathbb{H}_2$ 的原象。协议的过程如下：
+<img src="https://image.54rookie.com/blog/171568902020240514201659.png" alt=""></p>
+<ul>
+<li>在$|\mathbb{H}_1| \times |\mathbb{H}_2|$最小素因子至少为 |C| 的情况下，基于同态映射的Sigma protocol满足knowledge soundness以及special HVZK。</li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li>
+<p>Schnorr 协议中
+- $\mathbb{H}_1 := \mathbb{Z}_q,\ \mathbb{H}_2 := \mathbb{G},and \ \ \ \ \varphi_1(x):=(g^x)$
+- $R:={(\alpha,(u,\varphi)) \in \mathbb{H}_1 \times (\mathbb{H}_2 \times F):\varphi(\alpha)=u}$</p>
+</li>
+<li>
+<p>Okamoto协议中
+- $\mathbb{H}_1 := \mathbb{Z}_q^2,\ \mathbb{H}_2 := \mathbb{G},and \ \ \ \ \varphi_1(x,y):=(g^xh^y)$
+- $R:={((\alpha,\beta),(u,\varphi)) \in \mathbb{H}_1^2 \times (\mathbb{H}_2 \times F):\varphi(\alpha,\beta)=u}$</p>
+</li>
+<li>
+<p>The Chaum-Pedersen协议中
+-  $\mathbb{H}_1 := \mathbb{Z}_q, \mathbb{H}_2 := \mathbb{G}^2,and \ \ \ \ \varphi_2(x):=(g^x,u^x)$
+- $R:={(\alpha,(u_1,u_2,\varphi)) \in \mathbb{H}_1 \times (\mathbb{H}_2^2 \times F):\varphi(\alpha)=(u_1,u_2}$</p>
+</li>
+<li>
+<p>一般linear protocol中 $\mathbb{H}<em>1:= (\mathbb{Z}<em>q)^n, \ \mathbb{H}<em>2:=\mathbb{G}^m,and \ \ \ \ \varphi_3(x_1,&hellip;,x_n) := (\prod</em>{j=1}^ng</em>{1j}^{x_j},&hellip;,\prod</em>{j=1}^ng_{mj}^{x_j})$</p>
+</li>
+</ul>
+</blockquote>
+<p><a name="IC97D"></a></p>
+<h3 id="fait-shamir启发式">Fait-Shamir启发式</h3>
+<p><a name="TKx38"></a></p>
+<h5 id="定义-1">定义</h5>
+<blockquote>
+<p><img src="https://image.54rookie.com/blog/171568904520240514201724.png" alt=""></p>
+</blockquote>
+<p><a name="zLIdI"></a></p>
+<h5 id="知识签名sok">知识签名【SoK】</h5>
+<p><strong>定义：</strong></p>
+<blockquote>
+<ul>
+<li>知识签名实际上就是零知识证明，这里给出一个知识签名的例子，该例子经常会用到，目前我遇到最多的是在群签名中使用。</li>
+</ul>
+</blockquote>
+<p><strong>离散对数知识签名</strong>：</p>
+<blockquote>
+<p><strong>基本形式：</strong></p>
+<ul>
+<li>离散对数的知识签名是针对这样一个问题：$y = g^x mod(n)$;  x 是私钥，y 是公钥，g 和 n 都是公开的系统参数，m是消息，现在需要让别别人证明自己拥有私钥 x，并且不泄露 x 的信息。</li>
+<li>符号表示为：
+<ul>
+<li><img src="https://image.54rookie.com/blog/171568608020240514192800.png" alt=""></li>
+</ul>
+</li>
+<li>这里只需要证明者给出一个（c，s）对，符合以下的等式要求即可：
+<ul>
+<li>$c = H( m||y||g||(g^s) (y^c) )$</li>
+</ul>
+</li>
+<li><strong>知识签名生成：</strong>
+1. 选择一个随机数           $r$
+2. 计算c：根据公式         $c=H(m||y||g||g^r)$
+3. 计算s：根据公式         $s = r - c * x$
+4. (c,s)即为知识签名。</li>
+<li><strong>验证知识签名</strong>：
+1. 计算$c&rsquo;=H( m||y||g||(g^s) (y^c) )$
+2. 比较$c&rsquo;=c$是否成立。</li>
+<li>解释说明
+<ul>
+<li><img src="https://image.54rookie.com/blog/171568612420240514192844.png" alt="">
+<ul>
+<li>如果知道密钥x，执行通过上面操作过程中的四个步骤就可以轻松计算出(c,s)对的值，</li>
+<li>如果不知道密钥x，而想算出(c,s)，只能通过3式计算，这在计算上是不可行的。</li>
+<li>所以，如果能给出一个满足条件的（c,s）对，就能说明其拥有私钥x。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<br />
+<blockquote>
+<p><strong>拓展形式</strong>：</p>
+<ul>
+<li>离散对数的知识签名是针对这样一个问题：$y_1 = g_1^x\ mod(n);y_2 = g_2^x\ mod(n)$;  x 是秘密值，$y_1,y_2$是公开的。$g_1,g_2$ 和 n 都是公开的系统参数，m是消息，现在需要向别人证明自己拥有秘密值 x ，且这个 x满足$y_1 = g_1^x\ mod(n);y_2 = g_2^x\ mod(n)$，并且证明过程中不泄露 x 的信息。</li>
+<li>这里只需要证明者给出一个（c，s）对，符合以下的等式要求即可：
+<ul>
+<li>$c = H(\ m||y||g||g_1^s y_1^c||g_2^sy_2^c \ )$</li>
+</ul>
+</li>
+<li>具体的操作过程如下：【证明过程如上】
+1. 选择一个随机数           $r$
+2. 计算c：根据公式         $c=H(\ m||y||g||g_1^r||g_2^r \ )$
+3. 计算s：根据公式         $s = r - c * x$
+4. (c,s)即为知识签名。</li>
+</ul>
+</blockquote>
+<br />
+<blockquote>
+<p><strong>更一般的形式：</strong></p>
+<ul>
+<li>离散对数的知识签名：$y_1 = g_1^{x_1} \ mod(n);\ &hellip;\ ;y_m = g_m^{x_m} \ mod(n)$;  $x_i\ (i=1,2,&hellip;,m)$ 是秘密值，并且$y_i\ (i=1,2,&hellip;,m)$是公开的。$g_i\ (i=1,2,&hellip;,m)$ 和 n 都是公开的系统参数，m是消息，现在需要向别人证明自己拥有秘密值 $x_i\ (i=1,2,&hellip;,m)$ ，且$x_i$满足$y_i = g_i^{x_i} \ mod(n) \ (i=1,2,&hellip;,m)$，并且证明过程中不泄露$x_i\ (i=1,2,&hellip;,m)$ 的信息。</li>
+<li>这里只需要证明者给出一个$(c,s_1,s_2,&hellip;,s_m)$对，符合以下的等式要求即可：
+<ul>
+<li>$c = H(\ m||y||g||g_1^s y_1^c||&hellip;||g_m^sy_m^c \ )$</li>
+</ul>
+</li>
+<li>具体的操作过程如下：【证明过程如上】
+1. 选择随机数                 $r_1,r_2,&hellip;,r_m$
+2. 计算c：根据公式         $c=H(\ m||y||g||g_1^{r_1}||&hellip;||g_m^{r_m} \ )$
+3. 计算s：根据公式         $s_i = r_i - c * x_i \ \  (i=1,2,&hellip;,m)$
+4. 则$(c,s_1,s_2,&hellip;,s_m)$即为知识签名。</li>
+<li>说明：
+<ul>
+<li>在群签名中，经常用到这个知识签名。</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p><a name="yqh0E"></a></p>
+<h3 id="zk-snark">zk-SNARK</h3>
+<blockquote>
+<p>参考文献：</p>
+<ul>
+<li><a href="https://blog.csdn.net/qq_35739903/article/details/119455825">https://blog.csdn.net/qq_35739903/article/details/119455825</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/38205067">https://zhuanlan.zhihu.com/p/38205067</a></li>
+</ul>
+</blockquote>
+<p><a name="fuMTK"></a></p>
+<h3 id="参考文献">参考文献</h3>
+<ul>
+<li>【1】<a href="https://zhuanlan.zhihu.com/p/144899541">https://zhuanlan.zhihu.com/p/144899541</a></li>
+<li>【2】<a href="https://zhuanlan.zhihu.com/p/622105041">https://zhuanlan.zhihu.com/p/622105041</a></li>
+<li>【3】<a href="https://zhuanlan.zhihu.com/p/152065162">https://zhuanlan.zhihu.com/p/152065162</a></li>
+<li>【4】<a href="http://blockchain.whu.edu.cn/uploads/soft/201105/1_1954088811.pdf">http://blockchain.whu.edu.cn/uploads/soft/201105/1_1954088811.pdf</a>【PDF】</li>
+<li>【5】<a href="https://zhuanlan.zhihu.com/p/343756241">https://zhuanlan.zhihu.com/p/343756241</a>【讲的很好】</li>
+<li>【6】<a href="https://zhuanlan.zhihu.com/p/144899541">https://zhuanlan.zhihu.com/p/144899541</a>【讲的较详细】
+<a name="eJ4vk"></a></li>
+</ul>
+<h3 id="补充">补充：</h3>
+<p><a name="IPBv4"></a></p>
+<h4 id="sigma协议在其它资料中的表述">Sigma协议在其它资料中的表述</h4>
+<blockquote>
+<p><strong>Sigma协议簇：</strong>
+Sigma协议簇是指一类的协议，这些协议满足一些指定的要求。值得注意的是，Sigma协议簇中的协议都是零知识证明。也就是满足Sigma协议簇的协议一定是一个零知识证明。</p>
+<ol>
+<li><strong>二元关系（预备知识）：</strong></li>
+</ol>
+</blockquote>
+<p><img src="https://image.54rookie.com/blog/171568918820240514201947.png" alt=""></p>
+<blockquote>
+<ul>
+<li>例如：实数中的关系“大于”可记作 $R={(x,y)|x,y是实数且x&gt;y}$
+<ul>
+<li>其中 R 表示这个关系，它是一个集合，集合中的元素有二元组（x,y）组成</li>
+<li>R 中的元素是所有满足 x,y 是实数且 x&gt;y 的二元组 (x,y)</li>
+</ul>
+</li>
+<li>其它二元关系的例子（零知识证明常用到的）</li>
+</ul>
+</blockquote>
+<p><img src="https://image.54rookie.com/blog/171568920420240514202004.png" alt=""></p>
+<blockquote>
+<ol start="2">
+<li><strong>Sigma协议内容：</strong></li>
+</ol>
+</blockquote>
+<p><img src="https://image.54rookie.com/blog/171568921620240514202016.png" alt=""></p>
+<p><a name="dlapG"></a></p>
+<h4 id="以sigma协议为标准构造零知识证明">以Sigma协议为标准构造零知识证明</h4>
+<blockquote>
+<p><img src="https://image.54rookie.com/blog/171568923220240514202032.png" alt="">
+可以按照以下步骤证明该问题：
+<img src="https://image.54rookie.com/blog/171568925020240514202050.png" alt="">
+<img src="https://image.54rookie.com/blog/171568926420240514202104.png" alt="">
+证明过程如图所示：
+<img src="https://image.54rookie.com/blog/171568927620240514202116.png" alt="">
+说明：</p>
+<ul>
+<li>该协议是满足Sigma协议的三个性质的。因此他是一个零知识证明</li>
+</ul>
+</blockquote>
+<p><a name="n2zzO"></a></p>
+<h4 id="sigma协议的扩展">Sigma协议的扩展</h4>
+<blockquote>
+<p><strong>OR证明：</strong>
+<img src="https://image.54rookie.com/blog/171568929020240514202130.png" alt="">
+<img src="https://image.54rookie.com/blog/171568931420240514202154.png" alt="">
+<br />
+<strong>OR证明的性质：</strong>
+<img src="https://image.54rookie.com/blog/171568933320240514202213.png" alt=""></p>
+</blockquote>
+
+    </div>
+
+    
+
+    
+
+    <div class="container-prevnext">
+    <div><a href="http://54rookie.com/posts/%E7%90%86%E8%AE%BA%E7%9F%A5%E8%AF%86/">← 理论知识</a></div>
+    <div><a href="http://54rookie.com/posts/first/">First  →</a></div>
+</div>
+    
+    <div class="container-comment">
+	<script src="https://utteranc.es/client.js"
+        repo="54rookie/comment"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+	</script>
+</div>
+
+    
+</div>
+
+        </div>
+        <div id="footer"><div class="container-footer">
+    
+    <a href="//beian.miit.gov.cn" target="_blank">
+        
+        豫ICP备2024057213号-1
+        
+    </a>
+    <a id="s" href="/secrets">&nbsp;</a>
+    
+
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$']]
+            },
+    };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</div></div>
+    </body>
+</html>

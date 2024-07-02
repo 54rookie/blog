@@ -95,10 +95,16 @@
         url('fonts/roman/Code-New-Roman-b-2.woff') format('TrueType');
 }
 
+// @font-face {
+//     font-family: jinkaiFont;
+//     src: url('fonts/ttfs/jinkai.ttf') format('TrueType');
+// }
+
 @font-face {
     font-family: jinkaiFont;
-    src: url('fonts/ttfs/jinkai.ttf') format('TrueType');
+    src: url('fonts/jost/jost-v4-latin-regular.woff') format('TrueType');
 }
+
 
 @font-face {
     font-family: xianmoFont;
@@ -110,8 +116,10 @@
     src: url('fonts/ttfs/daxiang.ttf') format('TrueType');
 }
 
+
 @font-face {
     font-family: segoeFont;
     src: url('fonts/segoe/segoesc.ttf') format('TrueType'),
         url('fonts/segoe/segoescb.ttf') format('TrueType');
 }
+

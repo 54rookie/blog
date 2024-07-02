@@ -5,8 +5,17 @@
         {{ . }}
         {{ else }}
         <span class="some">enter your icp or a interesting slogan...<span>
-        {{ end }}
+                {{ end }}
     </a>
     <a id="s" href="/secrets">&nbsp;</a>
     <!-- {{- partial "partials/_media.html" . -}} -->
+
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$']]
+            },
+    };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </div>

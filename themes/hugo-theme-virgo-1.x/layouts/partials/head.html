@@ -11,5 +11,6 @@
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     {{ $built := resources.Get "main.js" | js.Build "main.js" }}
     <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css" /> -->
     <!-- <script type="module" src="/main.js"></script> -->
 </head>

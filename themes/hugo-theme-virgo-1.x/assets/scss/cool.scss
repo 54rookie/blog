@@ -1,7 +1,9 @@
 @mixin bg-cool {
-	background: $white-500;
+	// background: $white-500;
+	background: (255, 255, 255, .81);
 	backdrop-filter: saturate(180%) blur(3px);
 }
+
 
 body.cool {
 	background-color: $white-000;
@@ -15,7 +17,7 @@ body.cool {
 		top: 0;
 		left: 0;
 		z-index: -1;
-		background: url('/imgs/bg/default.jpg') center center/cover no-repeat fixed;
+		background: url('/imgs/wukong.jpg') center center/cover no-repeat fixed;
 	}
 
 	// 设置 body 遮罩
@@ -143,12 +145,13 @@ body.cool {
 				}
 			}
 		}
-
 	}
 
 	// #footer { }
 
 	pre {
-		background-color: $white-300 !important;
+		// background-color: $white-300 !important;
+		background-color: rgba(0,0,0, 0.77) !important;
+		color: white;
 	}
 }

@@ -1,3 +1,8 @@
+@mixin covexity{
+    background-color: #f0f0f0;
+    box-shadow: 0 0 4px 4px #cdcdcd;
+}
+
 .container-page {
     position: relative;
     font-size: 0.16rem;
@@ -67,6 +72,10 @@
                 font-size: .01rem;
             }
         }
+    }
+
+    .content{
+        @include covexity;
     }
 
     .content {

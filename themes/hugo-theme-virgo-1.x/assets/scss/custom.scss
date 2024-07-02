@@ -6,7 +6,7 @@ html {
 
 body {
     color: $gray-800;
-    font-family: $font-family--base;
+    // font-family: $font-family--base;
     font-size: 0.16rem;
     line-height: 1.5;
 }
@@ -31,7 +31,7 @@ h6 {
     }
 
     code {
-        font-family: $font-family--code;
+        // font-family: $font-family--code;
     }
 }
 
@@ -142,7 +142,11 @@ table {
 blockquote {
     padding-left: 16px;
     border-left: 1px solid $gray-500; //$blockquote-color;
-    color: $blockquote-color;
+    color: black;
+    // color: $blockquote-color;
+    // background-color: rgba(243,237,237, 0.77);
+    text-align:left;
+    border-color: seagreen;
 }
 
 .oh-essay,
@@ -153,14 +157,14 @@ td,
 li {
     code {
         font-size: 0.14rem;
-        font-family: $font-family--code;
+        // font-family: $font-family--code;
         color: $code-inline-color;
     }
 }
 
 pre,
 pre code {
-    font-family: $font-family--code;
+    // font-family: $font-family--code;
 }
 
 ul,
@@ -179,7 +183,7 @@ ol {
 }
 
 .some {
-    font-family: $font-family--some;
+    // font-family: $font-family--some;
 }
 
 h2,

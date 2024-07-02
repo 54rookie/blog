@@ -3,7 +3,6 @@
 {{ $IsSearch := eq .Title "Search"}}
 {{ $IsArchive := eq .Title "Archive"}}
 {{ $IsAbout := eq .Title "About"}}
-
 {{ $IsSecrets := eq .Section "secrets"}}
 
 <!-- 那些不需要文章相关功能（如目录层级，文章切换、字数时长统计等）的页面 -->
@@ -20,6 +19,8 @@
     {{ else if $IsArchive}} container-archive 
     {{ else }} container-page 
 {{ end }}">
+
+
 
     <div class="desc">
         {{if $IsPostPage }}
